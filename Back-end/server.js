@@ -77,7 +77,7 @@ const submissionSchema = new mongoose.Schema({
 const Submission = mongoose.model('Submission', submissionSchema);
 
 // Create a new submission
-app.post('/submit', async (req, res) => {
+app.post('https://hriday-sdh-mern.onrender.com/submit', async (req, res) => {
     try {
         const { sdh_id, sdh_type, sdh_super, bi_address, lbi, email, client_id, participation_status,name,ad_type,ad_l1,ad_l2,ad_l3,ad_l4,ad_l5,
         st_name, build_no, post_box,post_code,town_name,csb,country } = req.body;
